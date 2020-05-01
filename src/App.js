@@ -5,7 +5,7 @@ export default function App() {
   const usernameInputRef = useRef();
   function handleSubmit(event) {
     event.preventDefault();
-    alert(usernameInputRef.current.value);
+    alert(`You entered ${usernameInputRef.current.value}`);
   }
   return (
     <form onSubmit={handleSubmit}>
